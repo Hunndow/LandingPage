@@ -1,0 +1,120 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* HEADER */
+  header {
+    background-color: #121212;
+    padding: 20px; 
+    display: flex; /* UM AO LADO DO OUTRO */
+    justify-content: space-between; /* ESPAÇO MÁXIMO */
+    align-items: center; /* CENTRALIZADO */
+  }
+  
+  header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ff3b3b;
+  }
+  
+  /* SEÇÃO PRINCIPAL */
+  #inicio {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .blocointrodutorio {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  
+  /* BLOCOS DE CONTEÚDO */
+  .bloco, .blocoreverso {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .bloco .img-organization img, .blocoreverso .img-organization img {
+    max-width: 400px;
+    border-radius: 10px;
+  }
+
+  footer {
+    position: end;
+    text-transform: uppercase;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 0.7rem;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .blue-title {
+    color: #0077ff;
+    font-size: 2rem;
+  }
+  
+  .red-title {
+    color: #ff3b3b;
+    font-size: 1.8rem;
+  }
+  
+  .main-content {
+    max-width: 600px;
+  }
+  
+  /* RESPONSIVIDADE */
+  @media (max-width: 900px) {
+    .bloco, .blocoreverso {
+      flex-direction: column;
+      text-align: center;
+    }
+    .bloco .img-organization img, .blocoreverso .img-organization img {
+      margin-bottom: 20px;
+    }
+  }
