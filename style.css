@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* AQUI A GENTE RESETA ALGUMAS COISAS QUE VEEM DE PADRÃO DA ESTILIZAÇÃO DO HTML E COLOCAMOS A FONTE USADA */
   }
   
   body {
@@ -52,7 +53,16 @@
     margin: 50px auto;
     padding: 20px;
   }
-  
+
+  .main-contentINTRODUTION  {
+    text-align:center;
+  } 
+
+  .main-contentINTRODUTION h1 {
+    text-align: center;
+    color: #0077ff;
+    font-size: 2rem;
+  }
   .blocointrodutorio {
     text-align: left;
     margin-bottom: 50px;
@@ -82,6 +92,62 @@
     border-radius: 10px;
   }
 
+  /* SEÇÃO LOCAL-EVENTO */
+#local-evento {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.title-bloco {
+    margin-bottom: 50px;
+}
+
+.title-bloco h2 {
+    font-size: 2.5rem;
+    color: #0077ff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* GRID DE LOCAIS */
+.locais-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.locais {
+    background: #222;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out; /* PREPARA PRO HOVER */
+}
+
+.locais:hover {
+    transform: scale(1.05); /* EFEITO BONITO PRA CARALHO COM DUAS LINHA DE CÓDIGO */
+}
+
+.locais img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.main-content2 {
+    padding: 20px;
+}
+
+.description2 {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
   footer {
     position: end;
     text-transform: uppercase;
@@ -91,7 +157,7 @@
     display: flex;
     font-size: 0.7rem;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
   .blue-title {
@@ -117,4 +183,5 @@
     .bloco .img-organization img, .blocoreverso .img-organization img {
       margin-bottom: 20px;
     }
+
   }
